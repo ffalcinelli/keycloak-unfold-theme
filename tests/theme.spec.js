@@ -12,10 +12,10 @@ test('Keycloak Unfold Theme - Demo Login Page', async ({ page }) => {
   const mainContainer = page.locator('.pf-v5-c-login__main');
   const mainStyle = await mainContainer.evaluate(el => window.getComputedStyle(el));
 
-  // Check border-radius (0.5rem = 8px usually)
-  expect(mainStyle.borderRadius).toMatch(/8px/);
-  // Check background color (white)
-  expect(mainStyle.backgroundColor).toMatch(/rgb\(255, 255, 255\)/);
+  // Check border-radius (0)
+  expect(mainStyle.borderRadius).toMatch(/0px/);
+  // Check background color (transparent)
+  expect(mainStyle.backgroundColor).toMatch(/rgba\(0, 0, 0, 0\)/);
 
   // Check the primary button
   const loginButton = page.locator('#kc-login');

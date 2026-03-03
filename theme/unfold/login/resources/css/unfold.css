@@ -5,14 +5,17 @@
 }
 
 .pf-v5-c-login__main {
-  background-color: var(--pf-v5-global--BackgroundColor--200);
-  border-radius: var(--pf-v5-c-login__main--BorderRadius);
-  box-shadow: var(--pf-v5-c-login__main--BoxShadow);
-  border: 1px solid var(--pf-v5-global--BorderColor--100);
+  background-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  max-width: 384px;
+  margin: 0 auto;
 }
 
 .pf-v5-c-login__header {
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 #kc-header-wrapper {
