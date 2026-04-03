@@ -5,12 +5,14 @@
     "lint:css": "stylelint \"**/*.css\"",
     "build:css": "tailwind -i ./theme/unfold-base/login/resources/css/tailwind-input.css -o ./theme/unfold-base/login/resources/css/tailwind.css --minify",
     "build": "npm run build:css",
-    "package": "npm run build && zip -r ${npm_package_name}-v${npm_package_version}.jar theme/ META-INF/"
+    "package": "npm run build && zip -r ${npm_package_name}-v${npm_package_version}.jar theme/ META-INF/",
+    "test:unit": "node --test tests/*.test.js"
   },
   "devDependencies": {
     "@playwright/test": "^1.58.2",
     "@tailwindcss/cli": "^4.2.1",
     "@tailwindcss/typography": "^0.5.19",
+    "jsdom": "^29.0.1",
     "playwright": "^1.58.2",
     "stylelint": "^17.4.0",
     "stylelint-config-standard": "^40.0.0",
